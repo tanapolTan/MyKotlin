@@ -10,6 +10,8 @@ fun main(args: Array<String>) {
 
     val myDog: MyDog = InstanceUtils.newInstance(MyDog::class.java, "ABC", 20, MyCat("DEF", 50))
     println(myDog.toString())
+
+    InstanceUtils.newInstance(XXX::class.java)
 }
 
 object InstanceUtils {
@@ -50,3 +52,5 @@ class MyCat(
     var name: String? = null,
     var height: Int? = null
 ) : BaseObject()
+
+class XXX()
