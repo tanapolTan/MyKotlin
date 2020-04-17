@@ -34,7 +34,7 @@ object InstanceUtils {
         }
         return clazz.getDeclaredConstructor(*arr).newInstance(*args)
     }
- }
+}
 
 class MyQueue {
     val playQueue : Queue<String> = LinkedList()
