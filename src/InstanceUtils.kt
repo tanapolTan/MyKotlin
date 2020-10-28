@@ -11,8 +11,8 @@ fun main(args: Array<String>) {
 //    val myDog: MyDog = InstantUtilsJava.newInstance(MyDog::class.java, "ABC", 20, MyCat("DEF", 50))
 //    println(myDog.toString())
 
-    val newDog: NewDog2 = InstanceUtils.newInstance(NewDog2::class.java, "AAA", 13)
-    println(newDog)
+//    val newDog: NewDog2 = InstanceUtils.newInstance(NewDog2::class.java, "AAA", 13)
+//    println(newDog)
 }
 
 object InstanceUtils {
