@@ -18,7 +18,9 @@ public class MethodInfo {
 
         System.out.println("=================================");
         Method med = clss.getMethod("setVal", int.class);
-        med.invoke(e, "15");
-        System.out.println(e.getVal());
+        med.invoke(e, 15);
+
+        Method med2 = clss.getMethod("getVal");
+        System.out.println(med2.invoke(e));
     }
 }
