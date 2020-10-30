@@ -9,12 +9,12 @@ public class FieldInfo {
 
         Field[] fleids = clss.getFields();
         for (Field field : fleids) {
-            System.out.println(field.getName());
+            System.out.println(field);
         }
 
         Field[] fleids2 = clss.getDeclaredFields();
         for (Field field : fleids2) {
-            System.out.println(field.getName());
+            System.out.println(field);
         }
 
         Field field = clss.getField("type");

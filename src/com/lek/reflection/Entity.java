@@ -1,9 +1,13 @@
 package com.lek.reflection;
 
-class Entity {
+public class Entity {
 
     private int val;
     public String type;
+
+    private Entity() {
+        this(0, "id");
+    }
 
     public Entity(int val, String type) {
         this.val = val;

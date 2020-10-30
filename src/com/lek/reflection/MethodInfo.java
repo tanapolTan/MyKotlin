@@ -8,12 +8,12 @@ public class MethodInfo {
         Class<? extends Entity> clss = e.getClass();
         Method[] methods = clss.getMethods();
         for(Method method : methods) {
-             System.out.println(method.getName());
+             System.out.println(method);
         }
         System.out.println("=================================");
         Method[] methods2 = clss.getDeclaredMethods();
         for(Method method : methods2) {
-            System.out.println(method.getName());
+            System.out.println(method);
         }
 
         System.out.println("=================================");
