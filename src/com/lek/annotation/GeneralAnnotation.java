@@ -33,3 +33,7 @@ public class GeneralAnnotation extends Parent {
 interface FuncInterface {
     public void method(String test);
 }
+
+abstract class MyAbstract {
+    public abstract void letGo();
+}
