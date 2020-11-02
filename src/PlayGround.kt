@@ -21,6 +21,15 @@ fun main() {
 
         }
     }
+
+    val testObjAbs = object : Test() {
+        override fun absFunc(hit: Int) {
+            println(">>>>> $hit")
+        }
+    }
+
+    testObjAbs.absFunc(3)
+    testObjAbs.getData()
 }
 
 fun invokeLambda(lambda: (Double) -> Boolean) : Boolean {
@@ -29,4 +38,11 @@ fun invokeLambda(lambda: (Double) -> Boolean) : Boolean {
 
 interface Foo {
     fun receive(myStr: String)
+}
+
+abstract class Test {
+    abstract fun absFunc(hit: Int)
+    fun getData() {
+        println("Test Get")
+    }
 }
