@@ -1,13 +1,32 @@
 
 
 fun main() {
-    // for more example
-    // https://www.baeldung.com/kotlin-lambda-expressions
-    val magnitude100String = { input : Int, param2 : String ->
-        val magnitude = input * 100
-        magnitude.toString()
-        println(param2)
+    val array: ArrayList<String> = ArrayList()
+    array.add("1")
+    array.add("2")
+    array.add("3")
+
+    array.forEach {
+        println(it)
     }
 
-    println(magnitude100String(2, "cc"))
+    val test = invokeLambda {
+        it == 4.3
+    }
+
+    println(test)
+
+    val f = object : Foo {
+        override fun receive(myStr: String) {
+
+        }
+    }
+}
+
+fun invokeLambda(lambda: (Double) -> Boolean) : Boolean {
+    return lambda(4.329)
+}
+
+interface Foo {
+    fun receive(myStr: String)
 }
